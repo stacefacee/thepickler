@@ -59,3 +59,17 @@ a {
 li{
   list-style: none;
 }
+
+
+@media(max-width:800px){
+  #logo{
+    width: 100vw;
+    height: 25vh;
+    
+  }
+
+  .nav-bar{
+    display: inline-block;
+    margin: auto;
+  }
+}
