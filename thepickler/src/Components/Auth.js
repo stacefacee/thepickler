@@ -2,6 +2,10 @@ import axios from 'axios';
 import {connect} from 'react-redux';
 import {saveUser} from '../redux/authReducer';
 import {Component} from 'react';
+import '../Sass/Auth.scss';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 
 
 class Auth extends Component {
@@ -34,7 +38,7 @@ class Auth extends Component {
     })
   }
 
-  register= () => {
+  register = () => {
     axios.post('/auth/register', this.state)
     .then(res => {
       this.props.saveUser(res.data)
@@ -51,11 +55,15 @@ class Auth extends Component {
 
     return(
     <div className="Auth">
-      <div className= "title">
-      Login
-      </div>
+      
       <div className="loginContainer">
-        <input 
+        <br></br>
+        <br></br>
+        <br></br>
+        <TextField 
+        id="email-input"
+        label= "Email"
+        variant= "outlined"
         type="text"
         placeholder="email"
         value={email}
@@ -63,27 +71,43 @@ class Auth extends Component {
         />
         <br>
         </br>
+        <br>
+        </br>
+        <br>
+        </br>
 
-        <input
-        type="text"
+        <TextField
+        id="password-input"
+        label= "Password"
+        variant= "outlined"
+        type= "password"
         placeholder="password"
         value={password}
         onChange={e => this.handlePasswordInput(e.target.value)}
         />
         <br></br>
-        <button className= 'login-button' onClick={this.login}>Login</button>
+        <br></br>
+        
 
-        <button className= 'register-button' onClick={this.register}>Register</button>
+        <Button className= 'login-button' onClick={this.login}>Login</Button>
+        <br></br>
+        <br></br>
+        New User?
+        <br></br>
+        <br></br>
+
+
+        <Button className= 'register-button' onClick={this.register}>Register</Button>
+
+        
+        </div>
       </div>
+      
       
 
 
 
-
-
-
-
-    </div>
+     
     );
   }
 }

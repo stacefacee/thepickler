@@ -1,0 +1,43 @@
+$logo-color: #3C6767;
+$off-white: #F2F8F6;
+$gold-color: #DCA141;
+$navy-color: #2B2D42;
+
+
+
+.slider {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image {
+  width: 80vw;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: $gold-color;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: $gold-color;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}

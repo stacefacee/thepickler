@@ -1,0 +1,25 @@
+$logo-color: #3C6767;
+$off-white: #F2F8F6;
+$gold-color: #DCA141;
+$navy-color: #2B2D42;
+
+
+.products{
+  background-color: rgb(245, 242, 236) ;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid $gold-color;
+  border-radius: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.total{
+  background-color: rgb(245, 242, 236);
+  border: 3px solid $gold-color;
+  
+
+  
+}
+
+

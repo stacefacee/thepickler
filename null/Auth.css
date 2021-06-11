@@ -1,0 +1,29 @@
+.Auth {
+  margin: auto;
+  width: 55vw;
+  background-color: #F2F8F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.loginContainer {
+  height: 70vh;
+  width: 50vw;
+  border: solid 5px #DCA141;
+  border-radius: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#email-input {
+  width: 30%;
+}
+
+login-button:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=Auth.css.map */

@@ -1,0 +1,61 @@
+$logo-color: #3C6767;
+$off-white: #F2F8F6;
+$gold-color: #DCA141;
+$navy-color: #2B2D42;
+
+*{
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+
+
+#logo {
+  width: 35vw;
+  height: 20vh;
+  border-radius: 35%;
+  //border: 5px solid $gold-color;
+  padding: 22px;
+  
+   margin: auto;
+   display: block;
+  
+  
+
+
+  
+}
+
+.nav-bar {
+  background-color: $navy-color;
+  height: 25vh;
+  width: 100vw;
+  display:flex;
+  justify-content: space-between;
+  
+
+}
+
+.nav-links {
+  display: flex;
+ 
+
+
+}
+
+
+a:hover{
+color: $off-white
+}
+
+
+
+a {
+ color: $logo-color;
+ text-decoration: none;
+ padding: 10px;
+ list-style: none;
+}
+
+li{
+  list-style: none;
+}

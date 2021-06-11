@@ -1,0 +1,35 @@
+$logo-color: #3C6767;
+$off-white: #F2F8F6;
+$gold-color: #DCA141;
+$navy-color: #2B2D42;
+
+.Auth {
+  // margin: auto;
+  // width: 55vw;
+  // background-color: $off-white;
+   display: flex;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+}
+
+ .loginContainer {
+  height: 50vh;
+  width: 40vw;
+  border: solid 5px $gold-color;
+  border-radius: 20%;
+  background-color: $off-white;
+} 
+
+#email-input{
+  width: 25vw;
+}
+
+#password-input{
+  width: 25vw;
+}
+
+login-button:hover {
+  opacity: 0.5;
+
+}

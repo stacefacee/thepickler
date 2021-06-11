@@ -1,0 +1,15 @@
+$logo-color: #3C6767;
+$off-white: #F2F8F6;
+$gold-color: #DCA141;
+$navy-color: #2B2D42;
+
+.contact-form{
+  background-color: $off-white;
+  width: 60vw;
+  height: 40vh;
+  border: 5px solid $gold-color;
+  border-radius: 15%;
+  margin: auto;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+

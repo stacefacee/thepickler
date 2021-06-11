@@ -1,0 +1,22 @@
+body {
+  background-color: #2B2D42;
+}
+
+#product-image {
+  width: 10vw;
+  height: 15vh;
+  border: 1px solid #2B2D42;
+  border-radius: 15%;
+}
+
+.products {
+  background-color: #f5f2ec;
+  height: 30vh;
+  width: 20vw;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #2B2D42;
+  border-radius: 15%;
+  margin: 10px;
+}
+/*# sourceMappingURL=Products.css.map */

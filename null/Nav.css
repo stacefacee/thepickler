@@ -1,0 +1,20 @@
+#logo {
+  width: 65vw;
+  height: 20vh;
+  border-radius: 35%;
+  border: 5px solid #DCA141;
+}
+
+.nav-bar {
+  background-color: #F2F8F6;
+  height: 40vh;
+  width: 100vw;
+}
+
+.nav-links {
+  text-decoration: none;
+  padding: 2px 1px 2px;
+  list-style: none;
+  display: inline-block;
+}
+/*# sourceMappingURL=Nav.css.map */

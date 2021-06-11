@@ -1,0 +1,14 @@
+.products {
+  background-color: #f5f2ec;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid #DCA141;
+  border-radius: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.total {
+  background-color: #f5f2ec;
+}
+/*# sourceMappingURL=Cart.css.map */

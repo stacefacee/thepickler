@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,cAAc,CAAA;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../thepickler/src/Sass/Products.scss"
+    ],
+    "names": [],
+    "file": "Products.css"
+}

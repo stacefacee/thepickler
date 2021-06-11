@@ -1,0 +1,42 @@
+#logo {
+  width: 35vw;
+  height: 20vh;
+  border-radius: 35%;
+  padding: 22px;
+  margin: auto;
+  display: block;
+}
+
+.nav-bar {
+  background-color: #2B2D42;
+  height: 25vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a:hover {
+  color: #F2F8F6;
+}
+
+a {
+  color: #3C6767;
+  text-decoration: none;
+  padding: 10px;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=Nav.css.map */

@@ -1,14 +1,26 @@
 const express = require('express'),
       userCtrl = require('./controllers/auth'),
       productCtrl = require('./controllers/products'),
-      cartCtrl = require('./controllers/cart');
+      cartCtrl = require('./controllers/cart'),
+      contCtrl= require ('./controllers/contact');
 const massive = require('massive');
 const session = require('express-session');
 require('dotenv').config();
+const nodemailer = require ('nodemailer');
+
 
 const {CONNECTION_STRING, SESSION_SECRET, SERVER_PORT} = process.env;
 
 const app = express();
+
+ const transporter = nodemailer.createTransport({
+   service: "gmail",
+  auth: {
+     user:process.env.EMAIL,
+     pass:process.env.PASSWORD
+ }
+ });
+ app.set('transporter', transporter)
 
 app.use(express.json())
 app.use (session ({
@@ -40,3 +52,5 @@ app.delete('/api/cart/:products_cart_id', cartCtrl.deleteFromCart);
 app.put('/api/cart/:products_cart_id', cartCtrl.changeCartQty);
 
 app.get('/api/products', productCtrl.getProducts);
+
+ app.post('/api/contact', contCtrl.submitEmail);
